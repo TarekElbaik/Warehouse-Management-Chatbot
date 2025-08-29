@@ -44,7 +44,7 @@ Before starting, ensure you have the following installed:
 ### System Requirements
 
 - **RAM**: Minimum 4GB (8GB recommended)
-- **Storage**: ~2GB free space for dependencies
+- **Storage**: ~7GB free space for dependencies
 - **OS**: Windows 10+, macOS 10.15+, or Ubuntu 18.04+
 
 ## 🚀 Installation Guide
