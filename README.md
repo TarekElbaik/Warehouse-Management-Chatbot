@@ -52,7 +52,7 @@ Before starting, ensure you have the following installed:
 ### Step 1: Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/TarekElbaik/warehouse-chatbot
 cd warehouse-chatbot
 ```
 
