@@ -1,0 +1,33 @@
+version: "3.1"
+
+stories:
+- story: greet path
+  steps:
+    - intent: greet
+    - action: utter_greet
+
+- story: goodbye path
+  steps:
+    - intent: goodbye
+    - action: utter_goodbye
+
+- story: check order path
+  steps:
+    - intent: check_order_status
+    - action: action_check_order_status
+
+- story: reschedule order path
+  steps:
+    - intent: reschedule_order
+    - action: action_reschedule_order
+
+- story: check inventory path
+  steps:
+    - intent: check_inventory
+    - action: action_check_inventory
+
+- story: check inventory item path
+  steps:
+    - intent: check_inventory_item
+    - action: action_check_inventory
+

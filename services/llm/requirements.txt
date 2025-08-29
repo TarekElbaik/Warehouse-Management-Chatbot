@@ -1,0 +1,6 @@
+fastapi==0.110.0
+uvicorn==0.29.0
+transformers==4.40.2
+torch==2.2.2; platform_system != 'Windows'  # optional CPU backend for HF
+pandas==2.2.2
+

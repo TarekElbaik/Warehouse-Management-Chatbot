@@ -1,0 +1,105 @@
+version: "3.1"
+
+nlu:
+- intent: greet
+  examples: |
+    - hi
+    - hello
+    - hey
+    - good morning
+    - good evening
+    - Hi there
+    - Hello!
+
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you
+    - see you later
+    - thanks bye
+    - goodbye!
+
+- intent: check_order_status
+  examples: |
+    - where is order [1002](order_id)
+    - track order [1003](order_id)
+    - what is the status of order [1001](order_id)
+    - can you check order [1004](order_id)
+    - order status [1005](order_id)
+    - check my order [1001](order_id)
+    - track my order [1002](order_id)
+    - where is my order [1003](order_id)
+    - order [1004](order_id) status
+    - status of [1005](order_id)
+
+- intent: reschedule_order
+  examples: |
+    - reschedule order [101](order_id) to [2025-09-01](date)
+    - I want to change the delivery date for order [102](order_id) to [2025-08-25](date)
+    - move order [103](order_id) to [2025-09-05](date)
+    - change delivery date for order [104](order_id) to [2025-10-01](date)
+    - change delivery
+    - change date
+    - update delivery
+    - reschedule delivery
+    - modify delivery date
+    - reschedule my order
+    - update my delivery date
+    - change the delivery
+    - change ddelivery
+    - delivery change
+    - shift delivery date
+    - can I reschedule order [105](order_id) to [2025-11-15](date)
+    - update order [106](order_id) delivery to [2025-12-01](date)
+
+- intent: check_inventory
+  examples: |
+    - check stock
+    - is there any stock left
+    - show me the inventory
+    - what items are available
+    - check inventory
+    - show inventory
+    - what do you have in stock
+    - list all items
+    - show me all products
+    - what products are available
+    - inventory check
+    - stock check
+    - available items
+
+- intent: check_inventory_item
+  examples: |
+    - do you have [item1](item_code)
+    - is [Laptop](item_code) available
+    - stock for [Watch](item_code)
+    - do you have [Mobile](item_code)
+    - check [item2](item_code)
+    - [item3](item_code) availability
+    - is [item4](item_code) in stock
+    - [item5](item_code) stock
+    - do you have any [Charger](item_code)
+    - is there [Ear-phone](item_code) available
+    - [Watch](item_code) in stock?
+    - availability of [Laptop](item_code)
+    - check stock for [Mobile](item_code)
+    - [item1](item_code) available?
+    - how much [item2](item_code) do you have
+    - quantity of [item3](item_code)
+    - mobile
+    - laptop  
+    - watch
+    - charger
+    - ear-phone
+    - earphone
+    - phone
+    - item1
+    - item2
+    - item3
+    - item4
+    - item5
+    - do u have laptopleft
+    - mobile available
+    - laptop stock
+    - watch availability

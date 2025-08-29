@@ -1,0 +1,6 @@
+order_id,product_name,delivery_date,status
+1001,Ear-phone (item1),23-01-2026,shipped
+1002,Charger (item2),29-08-2025,processing
+1003,Watch (item3),2025-08-24,processing
+1004,Laptop (item4),21-01-2025,delivered
+1005,Phone (item5),24-05-2025,processing

@@ -1,0 +1,6 @@
+rasa==3.6.18
+rasa-sdk==3.6.2
+pandas==2.2.2
+requests==2.32.3
+python-dateutil
+

@@ -1,0 +1,64 @@
+version: "3.1"
+
+intents:
+  - greet
+  - goodbye
+  - check_order_status
+  - reschedule_order
+  - check_inventory
+  - check_inventory_item
+
+entities:
+  - order_id
+  - date
+  - item
+  - item_code
+
+slots:
+  order_id:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: order_id
+
+  date:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: date
+
+  item:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: item
+
+  item_code:
+    type: text
+    influence_conversation: false
+    mappings:
+      - type: from_entity
+        entity: item_code
+
+responses:
+  utter_greet:
+    - text: "Hello! 👋 Welcome to the Warehouse Assistant. How can I help you today?"
+    - text: "Hi there! 🏪 I can help you check order status, reschedule deliveries, or check our inventory. What would you like to do?"
+
+  utter_goodbye:
+    - text: "Goodbye! Have a great day! 👋"
+    - text: "Thank you for using Warehouse Assistant. See you soon! 🙋‍♂️"
+
+  utter_ask_order_id:
+    - text: "Please provide the order ID (e.g., 1001, 1002)."
+
+  utter_ask_date:
+    - text: "What date would you like to reschedule to? (Format: YYYY-MM-DD)"
+
+actions:
+  - action_check_order_status
+  - action_reschedule_order
+  - action_check_inventory
